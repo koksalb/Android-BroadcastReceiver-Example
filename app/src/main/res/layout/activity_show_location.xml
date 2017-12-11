@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Unknown"
-            android:id="@+id/TextView02"
+            android:id="@+id/TextView04"
             android:textSize="12sp"
             android:layout_gravity="center"/>
 
@@ -45,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Unknown"
-            android:id="@+id/TextView04"
+            android:id="@+id/TextView02"
             android:textSize="12sp"
             android:layout_gravity="center"/>
 
