@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="locationservices.android.eurecom.fr.locationservices.ShowLocation">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude"
+            android:id="@+id/TextView01"
+            android:textSize="15sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unknown"
+            android:id="@+id/TextView02"
+            android:textSize="12sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:id="@+id/TextView03"
+            android:textSize="15sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unknown"
+            android:id="@+id/TextView04"
+            android:textSize="12sp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="change to HybrId"
+                android:layout_marginTop="8dp"
+                android:id="@+id/Button02"
+                android:textSize="10sp"
+                android:onClick="showLocation"
+            android:layout_marginRight="8dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show LocatIon"
+                android:layout_marginTop="8dp"
+                android:id="@+id/Button01"
+                android:textSize="10sp"
+                android:onClick="showLocation"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <fragment
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
