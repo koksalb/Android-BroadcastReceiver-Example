@@ -131,7 +131,7 @@ googleMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
         saveCoordinatesInPreferences((float) latLng.latitude,
                 (float) latLng.longitude);
         locationManager.addProximityAlert(latLng.latitude, latLng.longitude,
-                20000, -1, proximityIntent);
+                200, -1, proximityIntent);
         IntentFilter filter = new IntentFilter(PROX_ALERT_INTENT);
 
         //HELP PLEASE
