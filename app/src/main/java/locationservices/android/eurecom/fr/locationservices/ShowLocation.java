@@ -134,7 +134,7 @@ googleMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
                 200, -1, proximityIntent);
         IntentFilter filter = new IntentFilter(PROX_ALERT_INTENT);
 
-        //HELP PLEASE
+
         registerReceiver(new ProximityIntentReceiver(), filter);
         Log.i("Registered", "proximity");
         Toast.makeText(getBaseContext(), "Added a proximity Alert\n Lat: "+ latLng.latitude + " Lon: " + latLng.longitude,
